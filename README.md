@@ -36,9 +36,9 @@ Internet Gateway a.k.a. router or the box somewhere in the corner of your rented
 
 Yes. But you will fuck the brain of the sniffer completely. 
 
-# Is It Legal?
+# Is It Ilegal?
 
-Absolutely 100%
+No. Absolutely Legal 100%
 
 # How To Use It Properly?
 
