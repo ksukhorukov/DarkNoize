@@ -13,11 +13,7 @@
 # You should have received a copy of the GNU General Public License V.3
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-require_relative './urls_fetcher'
-require_relative './verbose_messages'
-require_relative './helpers'
-
-require 'pry'
+require_relative './loader'
 
 class Noizer
   include UrlsFetcher
