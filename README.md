@@ -60,7 +60,7 @@ I strictly recommend you to use DarkNoize in parallel with your TOR browser and 
 
 Ruby 3.2.2
 
-# INSTALL
+# INSTALL  
 
 ```
 $ ./installer.sh
