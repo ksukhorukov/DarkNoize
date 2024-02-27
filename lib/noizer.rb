@@ -19,27 +19,11 @@ class Noizer
   include UrlsFetcher
   include VerboseMessages
   include Helpers
+  include Runner
 
   attr_reader :current_dir, :url, :urls_file, :location, :current_exception
 
   def initialize
-    perform
-  end
-
-  private 
-
-  def perform
-    urls.each do |url| 
-      @url = url
-
-      info
-
-      begin 
-        fetch(url)
-      rescue => e  
-        @current_exception = e
-        error
-      end 
-    end
+    run
   end
 end
