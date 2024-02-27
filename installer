@@ -113,8 +113,7 @@ fi
 
 out '[+] Adding darknoize to the loadpaths...'
 
-NEW_PATH="
-export PATH=\"\$PATH:$CURRENT_DIRECTORY/\""
+NEW_PATH="export PATH=\"\$PATH:$CURRENT_DIRECTORY/\""
 
 echo "$NEW_PATH" >> $PROFILE_FILE
 
