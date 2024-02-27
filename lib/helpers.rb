@@ -1,10 +1,10 @@
 
 module Helpers
   URLS_DIR = 'data'
-  URLS_FILE = 'urls_big_list.txt'
+  URLS_FILE = 'urls_big_list.txt' 
 
   private 
-  
+
   def executable_name
     :darknoize
   end
