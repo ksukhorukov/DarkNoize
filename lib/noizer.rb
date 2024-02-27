@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Copyright 2024 KIRILL SUKHORUKOV
 
 # This program is free software: you can redistribute it and/or modify

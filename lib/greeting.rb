@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Copyright 2024 KIRILL SUKHORUKOV
 
 # This program is free software: you can redistribute it and/or modify
@@ -16,10 +18,10 @@
 require 'colorize'
 require 'colorized_string'
 
-module Greeting 
+module Greeting
   def self.colors
-  @colors ||= (ColorizedString.colors - [:black, :white, :gray, :light_gray]).shuffle!
-end 
+    @colors ||= (ColorizedString.colors - %i[black white gray light_gray]).shuffle!
+  end
 
   def self.random_color
     colors.sample
@@ -27,6 +29,5 @@ end
 
   def self.hello
     puts "\n\n.::[STARTING THE DARK NETWORK NOIZE]::.\n\n".colorize(color: random_color, mode: :bold)
-  end 
+  end
 end
-

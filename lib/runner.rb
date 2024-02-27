@@ -1,19 +1,21 @@
+# frozen_string_literal: true
+
 module Runner
-  private 
+  private
 
   def run
-    while(true) do 
-      urls.each do |url| 
+    loop do
+      urls.each do |url|
         @url = url
 
         info
 
-        begin 
+        begin
           fetch(url)
-        rescue => e  
+        rescue StandardError => e
           @current_exception = e
           error
-        end 
+        end
       end
     end
   end
