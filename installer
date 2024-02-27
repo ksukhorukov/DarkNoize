@@ -111,13 +111,12 @@ if [ -f "$HOME/.$OPENBSD_PROFILE_FILE" ]; then
   make_shell_profile "$OPENBSD_PROFILE_FILE"
 fi
 
-out '[+] Adding darknoize to autoload...'
+out '[+] Adding darknoize to the loadpaths...'
 
 NEW_PATH="
 export PATH=\"\$PATH:$CURRENT_DIRECTORY/\""
 
-echo -e "$NEW_PATH" >> $PROFILE_FILE
-echo 'darknoize' >> $PROFILE_FILE
+echo "$NEW_PATH" >> $PROFILE_FILE
 
 success '[+] Success!'
 
