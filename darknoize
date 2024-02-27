@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Copyright 2024 KIRILL SUKHORUKOV
 
 # This program is free software: you can redistribute it and/or modify
@@ -13,20 +15,9 @@
 # You should have received a copy of the GNU General Public License V.3
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-require 'colorize'
-require 'colorized_string'
+require_relative './lib/noizer'
+require_relative './lib/greeting'
 
-module Greeting 
-  def self.colors
-  @colors ||= (ColorizedString.colors - [:black, :white, :gray, :light_gray]).shuffle!
-end 
+Greeting.hello
 
-  def self.random_color
-    colors.sample
-  end
-
-  def self.hello
-    puts "\n\n.::[STARTING THE DARK NETWORK NOIZE]::.\n\n".colorize(color: random_color, mode: :bold)
-  end 
-end
-
+Noizer.new

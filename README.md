@@ -63,7 +63,7 @@ Ruby 3.2.2
 # INSTALL  
 
 ```
-$ ./installer.sh
+$ ./installer
 ```
 
 Then you have to logout or reopen your terminal window
