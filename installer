@@ -63,7 +63,7 @@ fi
 
 RUBY_VERSION=`ruby -v | awk '{print $2}'`
 
-MAJOR_VERSION_PART=`echo -e "$RUBY_VERSION" | cut -d. -f1`
+MAJOR_VERSION_PART=`echo "$RUBY_VERSION" | cut -d. -f1`
 
 if [[ $MAJOR_VERSION_PART -ne $MAJOR_VERSION_PART_REQUIRED ]]; then
   error "[-] ERROR! Ruby version mismatch. Minimal Ruby version $MAJOR_VERSION_PART_REQUIRED"   
